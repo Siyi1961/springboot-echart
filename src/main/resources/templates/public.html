@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <link th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/webjars/bootstrap-treeview/1.2.0/css/bootstrap-treeview.css}" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap-treeview/1.2.0/js/bootstrap-treeview.js}"></script>
+</head>
+<body>
+    <div class="row" >
+        <div class="col-sm-2" style="height: 100%;">
+            <div class=" nav nav-pills nav-stacked" style="background: #f2f2f2;height: 100%;" th:fragment="public_left">
+                <h2>Echart</h2>
+                <div id="treeview" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

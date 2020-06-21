@@ -1,0 +1,22 @@
+{
+    "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b} : {c} ({d}%)"
+    },
+    "series": [{
+        "type": "pie",
+        "data": [{
+            "value": 100,
+            "name": "A"
+        }, {
+            "value": 200,
+            "name": "B"
+        }, {
+            "value": 300,
+            "name": "C"
+        }, {
+            "value": 400,
+            "name": "D"
+        }]
+    }]
+}

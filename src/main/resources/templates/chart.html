@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>chart</title>
+
+    <th:block th:include="header.html"></th:block>
+    <script type="text/javascript" th:src="@{/js/public.js}"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="row" style="height: 100%;">
+        <div class="col-sm-2" th:insert="~{public :: public_left}" style="padding: 0;height: 100%;">
+        </div>
+        <div class="col-sm-10">
+            <div id="chart"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "line",
+    "text": "折线图",
+    "selectable":false,
+    "state": {
+      "expanded": true
+    },
+    "nodes": [
+      {
+        "name": "line-simple",
+        "text": "Basic Line Chart",
+        "state": {
+          "selected":false
+        }
+      },
+      {
+        "name": "area-basic",
+        "text": "Basic Area Chart"
+      },
+      {
+        "name": "line-smooth",
+        "text": "Smoothed Line Chart"
+      },
+      {
+        "name": "line-stack",
+        "text": "Stacked Line Chart"
+      }
+    ]
+  },
+  {
+    "name": "bar",
+    "text": "柱状图",
+    "selectable":false,
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "bar-simple",
+        "text": "Basic Bar Chart"
+      },
+      {
+        "name": "bar-background",
+        "text": "Bar with Background"
+      }
+    ]
+  },
+  {
+    "name": "pie",
+    "text": "饼图",
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "pie-simple",
+        "text": "Basic Pie Chart"
+      },
+      {
+        "name": "pie-custom",
+        "text": "Customized Pie"
+      }
+    ]
+  },
+  {
+    "name": "scatter",
+    "text": "散点图",
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "scatter-simple",
+        "text": "Basic Scatter Chart"
+      }
+    ]
+  },
+  {
+    "name": "map",
+    "text": "地图",
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "map-simple",
+        "text": "Basic Map Chart"
+      }
+    ]
+  },
+  {
+    "name": "radar",
+    "text": "雷达图",
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "radar-simple",
+        "text": "Basic Radar Chart"
+      }
+    ]
+  },
+  {
+    "name": "funnel",
+    "text": "漏斗图",
+    "state": {
+      "expanded": false
+    },
+    "nodes": [
+      {
+        "name": "funnel-simple",
+        "text": "Basic Funnel Chart"
+      }
+    ]
+  }
+]
