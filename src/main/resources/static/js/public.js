@@ -43,6 +43,15 @@ function showchart(chartname) {
     echart.showLoading();
     var option = {};
     $.ajax({
+        url:chartname,
+        dataType:"json",
+        async:false,
+        success:function (res) {
+            option = res.option;
+        }
+    })
+    console.log(option);
+    /*$.ajax({
         url:"json/ChartOptions/"+chartname+".json",
         dataType:"json",
         async:false,
@@ -50,7 +59,7 @@ function showchart(chartname) {
             console.log(res);
             option = res;
         }
-    })
+    })*/
     echart.setOption(option);
     echart.hideLoading();
 }
