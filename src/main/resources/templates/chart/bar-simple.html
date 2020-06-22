@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <th:block th:include="header.html"></th:block>
+    <title>Basic Bar Chart</title>
+</head>
+<body class="container" style="height: auto;overflow: hidden;">
+    <div id="chart" style="height: 500px;"></div>
+</body>
+<script type="text/javascript">
+    $(function() {
+        showchart();
+    })
+    function showchart() {
+        var echart = echarts.init(document.getElementById('chart'));
+        echart.clear();
+        echart.showLoading();
+        var option = {
+            xAxis: {
+                type: 'category',
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar'
+            }]
+        };
+        echart.setOption(option);
+        echart.hideLoading();
+    }
+</script>
+</html>

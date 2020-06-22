@@ -20,8 +20,15 @@ public class IndexController {
     @RequestMapping("/{page}")
     public String showPage(@PathVariable String page, Model model) {
         System.out.println(page);
-        model.addAttribute("msg","Hello Thymeleaf");
+        model.addAttribute("msg","framex");
         return page;
+    }
+
+    @RequestMapping("chart/{page}")
+    public String showChildPage(@PathVariable String page, Model model) {
+        System.out.println(page);
+        model.addAttribute("msg","frame");
+        return "chart/"+page;
     }
 }
 

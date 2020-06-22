@@ -46,7 +46,9 @@ public class DataController {
                 "    series: [{\n" +
                 "        data: [820, 932, 901, 934, 1290, 1330, 1320],\n" +
                 "        type: 'line',\n" +
-                "        areaStyle: {}\n" +
+                "        areaStyle: {" +
+                "           normal: {}" +
+                "        }\n" +
                 "    }]\n" +
                 "}";
         JSONObject jsonObject = (JSONObject) JSONObject.parse(option);
@@ -183,7 +185,9 @@ public class DataController {
                 "        type: 'bar',\n" +
                 "        showBackground: true,\n" +
                 "        backgroundStyle: {\n" +
-                "            color: 'rgba(220, 220, 220, 0.8)'\n" +
+                "            normal: {\n" +
+                "                color: 'rgba(220, 220, 220, 0.8)'\n" +
+                "            }" +
                 "        }\n" +
                 "    }]\n" +
                 "}";
@@ -329,6 +333,7 @@ public class DataController {
                 "                name: 'Map',\n" +
                 "                type: 'map',\n" +
                 "                map: 'china',\n" +
+                "                selectedMode : 'single',\n"+
                 "                data:[{name: '江苏',value: 120, selected:true},\n" +
                 "                      {name: '天津',value: 240}]\n" +
                 "            }\n" +

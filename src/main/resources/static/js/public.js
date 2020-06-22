@@ -13,16 +13,31 @@ $(function () {
         // onNodeSelected:
     });
 
+    var val = $("#data").val();
+
+
     // $("#treeview").treeview('selectNode',[1]);
     $("#treeview").on("nodeSelected", function(event,data) {   //插件中的方法
-        showchart(data.name);
+        if(val == "frame") {
+            $("#chart").addClass("hidden");
+            $("#chartframe").removeClass("hidden");
+            $("#chartframe").attr("src","/chart/"+data.name);
+        } else {
+            $("#chart").removeClass("hidden");
+            $("#chartframe").addClass("hidden");
+            showchart(data.name);
+        }
     })
     $("#treeview").treeview("selectNode",[1]);
-
 })
 function init() {
     $("body").css("height",document.documentElement.clientHeight+"px");
+    $("body").css("overflow","hidden");
     $("#chart").css("height",(document.documentElement.clientHeight - 30)+"px");
+    $("#chartframe").load(function () {
+        var h = $(this).contents().find("body").height();
+        $(this).height(h);
+    })
 }
 window.onresize = init();
 function getTree() {

@@ -8,12 +8,14 @@
     <script type="text/javascript" th:src="@{/js/public.js}"></script>
 
 </head>
-<body class="container-fluid">
+<body class="container-fluid" style="overflow: hidden;height: 100%;">
     <div class="row" style="height: 100%;">
         <div class="col-sm-2" th:insert="~{public :: public_left}" style="padding: 0;height: 100%;">
         </div>
-        <div class="col-sm-10">
-            <div id="chart"></div>
+        <input type="hidden" th:value="${msg}" id="data" />
+        <div class="col-sm-10" style="height: 100%;padding: 0;">
+            <iframe  width="100%" id="chartframe" frameborder="0" scrolling="no"></iframe>
+            <div id="chart" style="height: 500px;"></div>
         </div>
     </div>
 </body>
